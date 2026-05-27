@@ -2,7 +2,12 @@ from fastapi import FastAPI, HTTPException, status
 from pydantic import BaseModel, EmailStr
 from typing import List, Optional
 
-app = FastAPI()
+app = FastAPI(
+    title="API de Estudiantes",
+    description="Una API para gestionar estudiantes en un programa académico",
+    version="1.0.0"
+
+)
 
 # =========================
 # MODELOS
